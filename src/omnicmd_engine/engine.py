@@ -1,6 +1,5 @@
 """OmniCmd Fuzzy Action Graph Engine."""
 from typing import List, Dict, Any, Optional, Callable
-import re
 
 class CommandAction:
     def __init__(self, id: str, title: str, category: str, handler: Optional[Callable] = None, keys: Optional[str] = None):
@@ -36,7 +35,6 @@ class OmniCmdEngine:
             elif q in t:
                 score = 20.0 + (len(q) / len(t)) * 10
             else:
-                # Subsequence matching
                 idx = 0
                 matched = 0
                 for ch in q:

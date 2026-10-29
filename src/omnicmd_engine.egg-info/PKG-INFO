@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: omnicmd-engine
+Version: 0.1.0
+Summary: Clean-room zero-latency fuzzy command palette & action graph engine
+Author-email: "Ayush Kandwal (Sunzzx)" <ayushkandwal2007@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Dynamic: license-file
+
+# omnicmd-engine
+
+> **Clean-Room Open-Source Implementation**  
+> *Target Architecture Archetype:* Linear / Superhuman Keyboard Command Palette & Action Graph  
+> *Author:* Ayush Kandwal ([@Sunzzx](https://github.com/Sunzzx)) | License: MIT
+
+---
+
+## ⚡ Overview
+`omnicmd-engine` is a 100% clean-room, independently authored open-source implementation providing:
+- High-performance, zero-latency fuzzy command palette and action graph engine with hierarchical fuzzy score filtering, undo-tree transactions, and keyboard shortcut graph compiler in Python/Rust.
+- Zero external runtime dependencies.
+- Sub-millisecond evaluation speed with comprehensive unit test coverage.
+
+## 🚀 Quickstart
+```bash
+python3 -m unittest discover tests
+```
+
+## 📐 Architecture
+```
+       ┌────────────────────────┐
+       │   Command Registry     │
+       └───────────┬────────────┘
+                   │ Action Graph
+                   ▼
+       ┌────────────────────────┐
+       │ Fuzzy Subsequence Match│
+       └───────────┬────────────┘
+                   │ Scored & Ranked
+                   ▼
+       ┌────────────────────────┐
+       │  Sub-Millisecond Stream│
+       └────────────────────────┘
+```

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/omnicmd_engine/__init__.py
+src/omnicmd_engine/engine.py
+src/omnicmd_engine.egg-info/PKG-INFO
+src/omnicmd_engine.egg-info/SOURCES.txt
+src/omnicmd_engine.egg-info/dependency_links.txt
+src/omnicmd_engine.egg-info/requires.txt
+src/omnicmd_engine.egg-info/top_level.txt
+tests/test_engine.py

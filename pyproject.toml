@@ -5,12 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "omnicmd-engine"
 version = "0.1.0"
-description = "Clean-room zero-latency fuzzy command palette & action graph engine"
+description = "High-performance, zero-latency fuzzy command palette and action graph engine with hierarchical fuzzy score filtering, undo-tree transactions, and keyboard shortcut graph compiler in Python/Rust."
 readme = "README.md"
 authors = [{ name = "Ayush Kandwal (Sunzzx)", email = "ayushkandwal2007@gmail.com" }]
 license = { text = "MIT" }
 requires-python = ">=3.9"
 dependencies = []
-
-[project.optional-dependencies]
-dev = ["pytest>=7.0"]

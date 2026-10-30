@@ -1,14 +1,12 @@
 Metadata-Version: 2.4
 Name: omnicmd-engine
 Version: 0.1.0
-Summary: Clean-room zero-latency fuzzy command palette & action graph engine
+Summary: High-performance, zero-latency fuzzy command palette and action graph engine with hierarchical fuzzy score filtering, undo-tree transactions, and keyboard shortcut graph compiler in Python/Rust.
 Author-email: "Ayush Kandwal (Sunzzx)" <ayushkandwal2007@gmail.com>
 License: MIT
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Provides-Extra: dev
-Requires-Dist: pytest>=7.0; extra == "dev"
 Dynamic: license-file
 
 # omnicmd-engine
